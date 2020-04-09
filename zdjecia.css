@@ -1,0 +1,66 @@
+body
+{
+	overflow: auto;
+}
+
+.websiteContainer
+{
+	position: fixed;
+	top: 103px;
+	left: 0;
+	width: calc(100vh - 103px);
+	height: 100vw;
+	transition: transform 1s cubic-bezier(0.9, 0, 0.1, 1),-webkit-transform 1s cubic-bezier(0.9, 0, 0.1, 1);
+	overflow: auto;
+	transform: rotate(-90deg) translateY(calc(-100vh + 103px));
+    transform-origin: right top;
+	overflow-x: hidden;
+	
+}
+
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.websiteContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.websiteContainer {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.websiteContainer { overflow: -moz-scrollbars-none; }
+
+.websiteContainer { -ms-overflow-style: none; }
+
+.horizontal-scroll-wrapper {
+ 
+  display: block;
+  top: 0;
+  left: 0;
+ 
+  margin: 0;
+  width: 50%;
+  overflow-x: hidden;
+float: left;
+
+}
+
+
+
+.photoGallery2
+{
+	width: 96%;
+	display: block;
+	padding-top: 15px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	
+}
+
+

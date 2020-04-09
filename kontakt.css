@@ -1,0 +1,222 @@
+
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width:1201px) {
+ .infoPanelText {
+    font-size: 30px;
+  }
+ 
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1200px) and  (min-width:1001px){
+.infoPanelText {
+    font-size: 23px;
+  }
+  
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1000px) {
+.infoPanelText {
+    font-size: 17px;
+  }
+   
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width:1201px) {
+ .infoPanelIcon {
+    font-size: 110px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1200px) and  (min-width:1001px){
+.infoPanelIcon {
+    font-size: 90px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1000px) {
+.infoPanelIcon {
+    font-size: 70px;
+  }
+}
+
+body
+{
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.websiteContainer
+{
+	position: relative;
+	top: 103px;
+	left: 0;
+	 width: 100vw;
+	 height: auto;
+	 transition: transform 1s cubic-bezier(0.9, 0, 0.1, 1),-webkit-transform 1s cubic-bezier(0.9, 0, 0.1, 1);
+}
+
+.zdjecieDoNapisuUGory
+{
+	width: 100vw;
+	height: 700px;
+	background-position: center;
+	background-image: url(kontakt.jpg);
+	background-repeat:no-repeat;
+    background-size:cover;
+	border-bottom: 0.5px solid #baa256;
+}
+
+.zdjecieKolorowaCzesc
+{
+	width: 100vw;
+	height: 300px;
+	overflow: hidden;
+}
+
+.zdjecieSzaraCzesc
+{
+	overflow: hidden;
+	position: relative;
+	width: 100vw;
+	height: 400px;
+	background-color: black;
+	border-top: 3px solid #baa256;
+	
+}
+
+.szareZdjecieDopasowane
+{
+	position: relative;
+	width: 100vw;
+	height: 700px;
+	top: -300px;
+	position: relative;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  background-position: center;
+	background-image: url(kontakt.jpg);
+	background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.ciemneTloKontakt
+{
+	z-index: 30;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.80;
+}
+
+.informacjeKontakt
+{
+	text-align: center;
+	font-size: 30px;
+	color: #eae2c5;
+	z-index: 31;
+	position: absolute;
+		width: 100%;
+		height: 100%;
+		
+		
+		top:0;
+		left: 0;
+		font-family: freight, bask;
+		line-height: 175%;
+		letter-spacing: 0.5px;
+		
+}
+
+
+
+.napisKontaktNaZdjeciuUGory
+{
+	z-index: 20;
+	width: 100vw;
+	height: inherit;
+	position: absolute;
+}
+
+.napisKontaktNaZdjeciuUGory > span
+{
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-family: myFirstFont;
+	font-size: 150px;
+	color: #fff;
+}
+
+#map
+{
+	position: relative;
+	height: 450px;
+	border-bottom: 8px solid #baa256;
+	border-top: 8px solid #baa256;
+	width: 100%;
+}
+
+.infoPanel
+{
+	float: left;
+	width: calc(33.33333% - 1px);
+	height: 100%;
+	border-right:  1px solid #baa256;
+	transition: background-color 0.7s ease-out 0s;
+	
+	color: #eae2c5;
+#baa256;
+}
+
+.infoPanel:hover
+{
+	background-color: #201d1a;
+	opacity: 0.8;
+}
+
+.infoPanelIcon
+{
+	position: relative;
+	width: 100%;
+	height: 235px;
+}
+
+.infoPanelIcon > div
+{
+	margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ color:  #eae2c5;
+  #eae2c5;
+}
+
+.infoPanelText
+{
+	position: relative;
+	width: 100%;
+	height: 165px;
+	text-align: center;
+}
+
+.infoPanelText > div
+{
+	margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ font-family: 'Old Standard TT', serif;
+ width: 100%;
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	
+	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="menu.css" type="text/css" />
+	<link rel="stylesheet" href="kontakt.css" type="text/css" />
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	
+    <script type="text/javascript" src="jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	
+	<div class="rozjasnianieWejscie"><div class="loadingLogo">Kontakt</div></div>
+	<div class="zadajPytanieContainer">
+		<div class="zamknijIkonaZadajPytanie" onclick="wysunFormularz()"><i class="icon-cancel-1"></i></div>
+		<form action="/action_page.php">
+			<label class="zadajPytanieTekst" for="fname" required>Imie i Nazwisko</label>
+			<input type="text" id="fname" ></input>
+			
+			<label class="zadajPytanieTekst" for="sname">Telefon kontaktowy</label>
+			<input type="text" id="sname" ></input>
+			
+			<label class="zadajPytanieTekst" for="Subject" required>Adres e-mail</label>
+			<input type="text" id="temat" ></input>
+			
+			<label class="zadajPytanieTekst" for="Tresc" required>O co chodzi?</label>
+			<textarea ></textarea>
+			
+			<div class="przyciskRamka"><input type="submit" value="ZADAJ PYTANIE"></div>
+		</form>
+	</div>
+	
+	
+	<div class="menuContainer">
+		<ul class="menu">
+			<li><a href="index.html">
+				<div class="logoContainer">
+					<div class="logoMiddle">
+						<image src="logoPicture.png" class="logo"/>
+						<div class="logoTexts">
+							<div class="logoFont">Estica</div>
+							<div class="logoSmallText">Najwyższa  jakość</div></a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li><a href="index.html">Firma</a></li>
+			<li><a href="galeria.html">Galeria</a>
+				<ol>
+					  <li>
+						<a href="zdjecia.html">
+							<div class="galeryBackground" style="background-image: url(16022014661.jpg);"></div>
+							<div class="galeryBlackFilter" ></div>
+							<span style="left: 12.5%;"><span>Kuchnia</span></span>
+						</a>						
+					  </li>
+					  <li>
+						<a href="zdjecia.html">
+							<div class="galeryBackground" style="background-image: url(08072014864.jpg);"></div>
+							<div class="galeryBlackFilter" ></div>
+							<span style="left: 37.5%;"><span>Schody</span></span>
+						</a>						
+					  </li>
+					  <li>
+						<a href="zdjecia.html">
+							<div class="galeryBackground" style="background-image: url(16022014661.jpg);"></div>
+							<div class="galeryBlackFilter"></div>
+							<span style="left: 62.5%;"><span>Kuchnia</span></span>
+						</a>						
+					  </li>
+					  <li>
+						<a href="zdjecia.html">
+							<div class="galeryBackground" style="background-image: url(img.jpg);"></div>
+							<div class="galeryBlackFilter"></div>
+							<span style="left: 87.5%;"><span>Schody</span></span>
+						</a>						
+					  </li>
+				</ol>
+			</li>
+			<li><a href="wycena.html">Wycena</a></li>
+			<li style="background-color: #292421; position: relative;" ><a style="color:#baa256;" href="kontakt.html">Kontakt</a>
+				<div style="position: absolute; width: 100%; height: 7px; background-color: #baa256; top: 0;"></div>
+			</li>
+			<li><a href="#"  onclick="wysunFormularz()"><span style="width: 90%;">Zadaj pytanie</span></a></li>
+		</ul>
+	</div>
+	
+	<div class="klasaDoCzcionki">
+		<div class="websiteContainer">
+			<div class="zdjecieDoNapisuUGory">
+				<div class="zdjecieKolorowaCzesc">
+					<div class="napisKontaktNaZdjeciuUGory"><span>Kontakt</span></div>
+				</div>
+				<div class="zdjecieSzaraCzesc">
+					<div class="szareZdjecieDopasowane"></div>
+					<div class="ciemneTloKontakt">
+						
+					</div>
+					<div class="informacjeKontakt">
+						<div class="infoPanel">
+							<div class="infoPanelIcon"><div><i class="icon-location"></i></div> </div>
+							<div class="infoPanelText"><div>
+								ul. Tczewska 16</br>
+								83-031 Łęgowo</div>
+							</div>
+						</div>
+						<div class="infoPanel">
+							<div class="infoPanelIcon"><div><i class="icon-phone"></i> </div> </div>
+							<div class="infoPanelText"><div>
+								(058) 691-19-51</br>
+								&#160;505-567-236&#160;</div>
+							</div>
+						</div>
+						<div class="infoPanel" style="border-right: none;">
+							<div class="infoPanelIcon"><div><i class="icon-mail-alt"></i> </div></div>
+							<div class="infoPanelText"><div>
+								biuro@estica.pl</div>
+							</div>
+						</div>
+						<span style=" clear:both;"></span<
+					</div>
+				</div>
+				
+				
+				
+				
+				</div>
+			</div>
+	
+	
+						<div id="map"></div>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 54.223280, lng: 18.644640},
+		 
+          zoom: 12,
+  zoomControl: false,
+  mapTypeControl: false,
+  scaleControl: false,
+  streetViewControl: false,
+  rotateControl: false,
+  fullscreenControl: false,
+          styles: [
+    {
+        "featureType": "all",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "hue": "#ff4400"
+            },
+            {
+                "saturation": -68
+            },
+            {
+                "lightness": -4
+            },
+            {
+                "gamma": 0.72
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "hue": "#0077ff"
+            },
+            {
+                "gamma": 3.1
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "all",
+        "stylers": [
+            {
+                "hue": "#44ff00"
+            },
+            {
+                "saturation": -23
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "saturation": -64
+            },
+            {
+                "hue": "#ff9100"
+            },
+            {
+                "lightness": 16
+            },
+            {
+                "gamma": 0.47
+            },
+            {
+                "weight": 2.7
+            }
+        ]
+    },
+    {
+        "featureType": "transit.line",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "lightness": -48
+            },
+            {
+                "hue": "#ff5e00"
+            },
+            {
+                "gamma": 1.2
+            },
+            {
+                "saturation": -23
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "hue": "#00ccff"
+            },
+            {
+                "gamma": 0.44
+            },
+            {
+                "saturation": -33
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "hue": "#007fff"
+            },
+            {
+                "gamma": 0.77
+            },
+            {
+                "saturation": 65
+            },
+            {
+                "lightness": 99
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "gamma": 0.11
+            },
+            {
+                "weight": 5.6
+            },
+            {
+                "saturation": 99
+            },
+            {
+                "hue": "#0091ff"
+            },
+            {
+                "lightness": -86
+            }
+        ]
+    }
+]
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: 54.223280, lng: 18.644640},
+          map: map,
+		  title: 'Estica'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqS2r17ZvAzMgWLftRQ04ewJus9EcDNSQ&callback=initMap">
+    </script>
+		
+	
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="menu.css" type="text/css" />
+	<link rel="stylesheet" href="website.css" type="text/css" />
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	<link rel="stylesheet" href="fontello-2641d5e4/css/fontello.css" type="text/css" />
+	
+    <script type="text/javascript" src="jquery.min.js"></script>
+	<script src="script.js"></script>
+	
+	<script>
+		var level=0;
+var canYouScroll=true;
+
+$(window).bind('mousewheel ', function(event) {
+	
+	if(canYouScroll)
+	{
+		//do gory
+		if(event.originalEvent.wheelDelta < 0 && level<=1)
+		{
+			level++;
+			$('.websiteContainer').css("transform", "translateY("+(-level*33.3333)+"%)");
+			$('.websiteContainer').css("-webkit-transform", "translateY("+(-level*33.3333)+"%)");
+		}
+		//na dol
+		else if(event.originalEvent.wheelDelta >= 0 && level>=1)
+		{
+			level--;
+			$('.websiteContainer').css("transform", "translateY("+(-level*33.3333)+"%)");
+			$('.websiteContainer').css("-webkit-transform", "translateY("+(-level*33.3333)+"%)");
+		}
+		
+		if(level>=1 && level<=2)
+		{
+			canYouScroll=false;
+			setTimeout(function() {
+				canYouScroll=true;
+			}, 1000);
+		}
+	}
+});
+
+$(window).bind('wheel ', function(event) {
+	
+	if(canYouScroll)
+	{
+		//do gory
+		if(event.originalEvent.deltaY > 0 && level<=1)
+		{
+			level++;
+			$('.websiteContainer').css("transform", "translateY("+(-level*33.3333)+"%)");
+			$('.websiteContainer').css("-webkit-transform", "translateY("+(-level*33.3333)+"%)");
+		}
+		//na dol
+		else if(event.originalEvent.deltaY <= 0 && level>=1)
+		{
+			level--;
+			$('.websiteContainer').css("transform", "translateY("+(-level*33.3333)+"%)");
+			$('.websiteContainer').css("-webkit-transform", "translateY("+(-level*33.3333)+"%)");
+		}
+		
+		if(level>=1 && level<=2)
+		{
+			canYouScroll=false;
+			setTimeout(function() {
+				canYouScroll=true;
+			}, 1000);
+		}
+	}
+});
+
+function goDown()
+{
+//do gory
+		if(level<=0)
+		{
+			level++;
+			$('.websiteContainer').css("transform", "translateY("+(-level*33.3333)+"%)");
+			$('.websiteContainer').css("-webkit-transform", "translateY("+(-level*33.3333)+"%)");
+		}
+		
+		if(level>=1 && level<=2)
+		{
+			canYouScroll=false;
+			setTimeout(function() {
+				canYouScroll=true;
+			}, 1000);
+		}
+}
+
+
+	</script>
+	
+	
+</head>
+<body>
+	<div class="klasaDoCzcionki">
+		<div class="rozjasnianieWejscie"><div class="loadingLogo">Estica</div></div>
+	<div class="zadajPytanieContainer">
+		<div class="zamknijIkonaZadajPytanie" onclick="wysunFormularz()"><i class="icon-cancel-1"></i></div>
+		<form class="gform" method="POST" data-email="teststrony2269@gmail.com" action="https://script.google.com/macros/s/AKfycbwesfIlb80SN6cfFoGItszGHY-bPzI9Oy9KjRD161LWILMWQEA6/exec">
+			
+			
+			
+      <label class="zadajPytanieTekst" for="fname" required>Imie i Nazwisko</label>
+			<input type="text" id="fname" name="Imie"></input>
+			
+			<label class="zadajPytanieTekst" for="sname">Telefon kontaktowy</label>
+			<input type="text" id="sname" name="Nazwisko"></input>
+			
+			<label class="zadajPytanieTekst" for="Subject" required>Adres e-mail</label>
+			<input type="text" id="temat" name="E-mail"></input>
+			
+			<label class="zadajPytanieTekst" for="Tresc" required>O co chodzi?</label>
+			<textarea name="Tresc"></textarea>
+			
+	<div class="form-elements">		
+			<div class="przyciskRamka"><input type="submit" value="ZADAJ PYTANIE"></div>
+
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <div class="przyciskRamka"><input type="submit" value="WYSŁANO"></div>
+    </div>
+		</form>
+		
+		
+	</div>
+	
+	<div class="menuContainer">
+		<ul class="menu">
+			<li><a href="index.html" >
+				<div class="logoContainer">
+					<div class="logoMiddle">
+						<image src="logoPicture.png" class="logo"/>
+						<div class="logoTexts">
+							<div class="logoFont">Estica</div>
+							<div class="logoSmallText">Najwyższa  jakość</div></a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li style="background-color: #292421; position: relative;" ><a style="color:#baa256;" href="index.html">Firma</a>
+				<div style="position: absolute; width: 100%; height: 7px; background-color: #baa256; top: 0;"></div>
+			</li>
+			<li><a href="galeria.html">Galeria</a>
+				<ol>
+					  <li>
+						<a href="zdjecia.html">
+							<div class="galeryBackground" style="background-image: url(16022014661.jpg);"></div>
+							<div class="galeryBlackFilter" ></div>
+							<span style="left: 12.5%;"><span >SCHODY SAMONOŚNE</span></span>
+						</a>						
+					  </li>
+					  <li>
+						<a href="zdjecia.html">
+							<div class="galeryBackground" style="background-image: url(08072014864.jpg);"></div>
+							<div class="galeryBlackFilter" ></div>
+							<span style="left: 37.5%;"><span>SCHODY NA BETONIE</span></span>
+						</a>						
+					  </li>
+					  <li>
+						<a href="zdjecia.html">
+							<div class="galeryBackground" style="background-image: url(16022014661.jpg);"></div>
+							<div class="galeryBlackFilter"></div>
+							<span style="left: 62.5%;"><span>MEBLE</span></span>
+						</a>						
+					  </li>
+					  <li>
+						<a href="zdjecia.html">
+							<div class="galeryBackground" style="background-image: url(img.jpg);"></div>
+							<div class="galeryBlackFilter"></div>
+							<span style="left: 87.5%;"><span>INNE</span></span>
+						</a>						
+					  </li>
+				</ol>
+			</li>
+			<li><a href="wycena.html">Wycena</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+			<li><a href="#" onclick="wysunFormularz()"><span style="width: 90%;">Zadaj pytanie</span></a></li>
+		</ul>
+	</div>
+	
+	<div class="websiteContainer" style="height: calc(3 * ( 100vh - 103px) ); top: 103px;">
+		<div class="firmContent">
+			<div class="firmImage">
+				<div class="pointDownArrow" onclick="goDown()">
+					<div class="arrowLine"></div>
+						<div class="arrowTriangle"><i class="icon-down-dir"></i></div>
+				</div>
+			</div>
+			<div class="firmaInformacjeTlo" >
+				<div class="zdjeciePrzyciemnienie"></div>	
+			</div>
+			<div class="firmaNaglowek">Estica</div>
+			<div class="firmaTekst">We’ve gathered the greats –</br>
+			<div class="opisFirmy">
+			Dobry produkt cechuje dokładność wykonania  i dbałość o najdrobniejsze szczegóły, aby temu sprostać kierujemy się jedną zasadą - "Jakość nie zna kompromisu".
+		</div></div>
+		
+		<div class="bottomBorderSlajd"></div>
+		</div>
+		
+	<div class="firmContent">
+			<div class="firmImage">
+				<div class="pointDownArrow" onclick="goDown()">
+					<div class="arrowLine"></div>
+						<div class="arrowTriangle"><i class="icon-down-dir"></i></div>
+				</div>
+			</div>
+			<div class="firmaInformacjeTlo" >
+				<div class="zdjeciePrzyciemnienie"></div>	
+			</div>
+			<div class="firmaNaglowek">Estica</div>
+			<div class="firmaTekst">We’ve gathered the greats –</br>
+			<div class="opisFirmy">
+			Dobry produkt cechuje dokładność wykonania  i dbałość o najdrobniejsze szczegóły, aby temu sprostać kierujemy się jedną zasadą - "Jakość nie zna kompromisu".
+		</div></div>
+		
+		<div class="bottomBorderSlajd"></div>
+		</div>
+		
+		<div class="firmContent">
+			<div class="firmImage">
+				<div class="pointDownArrow" onclick="goDown()">
+					<div class="arrowLine"></div>
+						<div class="arrowTriangle"><i class="icon-down-dir"></i></div>
+				</div>
+			</div>
+			<div class="firmaInformacjeTlo" >
+				<div class="zdjeciePrzyciemnienie"></div>	
+			</div>
+			<div class="firmaNaglowek">Estica</div>
+			<div class="firmaTekst">We’ve gathered the greats –</br>
+			<div class="opisFirmy">
+			Dobry produkt cechuje dokładność wykonania  i dbałość o najdrobniejsze szczegóły, aby temu sprostać kierujemy się jedną zasadą - "Jakość nie zna kompromisu".
+		</div></div>
+		
+		<div class="bottomBorderSlajd"></div>
+		</div>
+	
+
+	
+	</div>
+	</div>
+	
+	
+		<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+	
+</body>
+</html>

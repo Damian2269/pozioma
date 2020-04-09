@@ -1,0 +1,112 @@
+@media screen and (min-width:1201px) {
+ .galeriaPodpisyZdjec {
+    font-size: 40px;
+	padding: 28px 18px;
+  }
+ 
+ .galeryOption:hover > .galeriaPodpisyZdjec
+ {
+	 padding: 28px 18px;
+ }
+ 
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1200px) and  (min-width:1001px){
+.galeriaPodpisyZdjec {
+    font-size: 32px;
+	padding: 20px 15px;
+  }
+  
+  .galeryOption:hover > .galeriaPodpisyZdjec
+ {
+	 padding: 20px 15px;
+ }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1000px) {
+.galeriaPodpisyZdjec {
+    font-size: 26px;
+	padding: 15px 12px;
+  }
+   
+   .galeryOption:hover > .galeriaPodpisyZdjec
+ {
+	 padding: 15px 12px;
+ }
+}
+
+
+.galeryContainer
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	transition: all 1000ms cubic-bezier(0.22, 0.61, 0.36, 1);
+	
+}
+
+.galeryOption
+{
+	position: relative;
+	float: left;
+	height: 100%;
+	border-right:1px solid #baa256;
+	width: calc(25% - 1px);
+	transition: all 1000ms cubic-bezier(0.22, 0.61, 0.36, 1);
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+}
+
+.galeryContainer > a:last-child > div
+{
+	border-right:none;
+}
+
+.galeryOption:after 
+{
+	  content:'';
+	  display:block;
+	  clear:both;
+}
+
+.zdjeciePrzyciemnienieGaleria
+{
+	opacity: 0.58;
+	transition: all 500ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.galeryOption:hover > .zdjeciePrzyciemnienieGaleria
+{
+	opacity: 0.0;
+}
+
+.galeriaPodpisyZdjec
+{
+	font-family: "freight-text-pro", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	position: absolute;
+	margin-left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	top: 42%;
+	 text-decoration:none;
+	line-height: 45px;
+	color: #baa256;
+	
+	border: 2px solid transparent;
+	transition: all 300ms cubic-bezier(0.22, 0.61, 0.36, 1);
+	
+}
+
+.galeryOption:hover > .galeriaPodpisyZdjec
+{
+		background-color: rgb(32, 29, 26,0.65);
+		
+	border: 2px solid #baa256;
+}
+
+
+

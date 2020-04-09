@@ -1,0 +1,170 @@
+@font-face {
+    font-family: bask;
+    src: url(fontlogo/baskvl.woff);
+}
+
+.lightBoxContainer
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 101;
+	-webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.showLightBoxContainerAnimation
+{
+	opacity: 1;
+	visibility: visible;
+}
+
+.slaidWindow
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	-webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+	transition-delay: .4s;
+	-webkit-transition-delay: .4s;
+	-moz-transition-delay: .4s;
+	-o-transition-delay: .4s;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.showSlaidWindow
+{
+	opacity: 1;
+	visibility: visible;
+}
+
+.buttonToLeft
+{
+	position: fixed;
+	padding: 42px 10px;
+	font-size: 18px;
+	left: 12px;
+	background: #baa256;
+    pointer-events: all;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 14;
+	color: #000;
+}
+
+.buttonToRight
+{
+	position: fixed;
+	padding: 42px 10px;
+	font-size: 18px;
+	right: 12px;
+	background: #baa256;
+    pointer-events: all;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 14;
+	color: #000;
+}
+
+.left
+{
+	float: left;
+}
+
+.arrowLine
+{
+	position: relative;
+	width: 21px;
+	height: 4px;
+	background-color: #000;
+	float: left;
+}
+
+.arrowLineLeft
+{
+	 -webkit-transform: translate(-8px, 7px);
+    transform: translate(-8px, 7px);
+}
+
+.arrowLineRight
+{
+	 -webkit-transform: translate(8px, 7px);
+    transform: translate(8px, 7px);
+}
+
+.slaidContainer
+{
+	height: 100vh;
+	overflow: hidden;
+	-webkit-transition: all .7s cubic-bezier(0.9, 0, 0.1, 1);
+    transition: all .7s cubic-bezier(0.9, 0, 0.1, 1);
+}
+
+.slaid
+{
+	height: 100vh;
+	width: 100vw;
+	max-width: 100vw;
+	display: table-cell;
+	
+}
+
+.slaidBackground
+{
+	position: absolute;
+	width: 100vw;
+	height: 100%;
+	background-color:#130707;
+	opacity: 0.93;
+	cursor: pointer;
+}
+
+
+.slaidPhoto
+{
+	height: calc(94vh - 24px);
+	max-width: 100vw;
+	position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 3%);
+  -webkit-transform:  translate(-50%, 3%);
+  z-index: 12;
+}
+
+@-moz-document url-prefix() {
+  .slaidPhoto {
+    height: calc(94vh - 24px);
+	max-width: 100vw;
+	position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -52%);
+  -webkit-transform:  translate(-50%, -52%);
+  z-index: 12;
+  }
+}
+
+.photoCaption
+{
+	position: relative;
+	text-align: center;
+	width: 100%;
+	color: #eae2c5;
+	font-size: 20px;
+	line-height: 10px;
+	font-family: bask;
+	top: calc(2.82vh + 7px);
+}
